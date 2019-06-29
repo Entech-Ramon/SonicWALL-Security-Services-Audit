@@ -18,7 +18,7 @@ Enable the SonicOS API for each SonicWALL using Basic Auth
 
 ITGlue:
     SonicWALL Admin Passwords Documented and Specific Password Category set for them. (Example, We used the Password Category "SonicWALL Admin")
-
+![](ScreenShots/SW_Password_Category.jpg)
 ### Script Logic
 Below are high level diagrams of the workflow for these scripts.
 
@@ -37,17 +37,22 @@ Using an Azure Automation account and Azure Key Vault, we are able to pull API K
 A.  Documenting the following Security Services for Sonicwalls and tagging Flexible Asset to Sonicwall Config
 
     1.  GateWay Anti Virus
-   ![](ScreenShots/SW_SS_GW_AV_Example.jpg) 
+   ![](ScreenShots/SW_SS_GW_AV_Example.jpg)
+   
     2.  App Control Advanced
    
         a.  Encrypted Key Exchange and Tor
    ![](ScreenShots/SW_SS_App_Control_Example.jpg)
+    
     3.  Intrusion Prevention
    ![](ScreenShots/SW_SS_IPS_Example.jpg)
-    4.  Anti-Spyware
     
+    4.  Anti-Spyware
+   ![](ScreenShots/SW_SS_Anti_Spy_Example.jpg) 
+   
     5.  RealTime Black List
    ![](ScreenShots/SW_SS_RBL_BN_Example.jpg)
+    
     6.  BotNet Filter
         
     7.  Geo-IP Filter
@@ -56,11 +61,16 @@ A.  Documenting the following Security Services for Sonicwalls and tagging Flexi
     
 B.  Documenting Basic Sonicwall Info
 ![](ScreenShots/SW_SS_Info_Example.jpg)
+
 C.  Documenting All Address Objects for Sonicwall, creating their own Flexible Asset and tagging them to SonicWall config.
    ![](ScreenShots/SW_Config_Example.jpg)
+   
    ![](ScreenShots/SW_AO_Host_Example.jpg)
+   
    ![](ScreenShots/SW_AO_MAC_Example.jpg)
+   
    ![](ScreenShots/SW_AO_FQDN_Example.jpg)
+   
    ![](ScreenShots/SW_AO_Subnet_Example.jpg)
 
 D.  Using ConnectWise Manage API to Create Ticketfor out of SOP settings.

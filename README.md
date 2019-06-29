@@ -8,10 +8,13 @@ Hardware:
     Next Gen SonicWALLs that support the SonicOS 6.5.3 firmware. (Required for SonicOS API introduced in version 6.5.1, we are NOT using SSH)
 
 Software/Services:
-    Azure Automation Account or Server to Run Scripts with Powershell version 3 or above.
-    Database (Can be SQL, Power Apps Common Data Service, Excel SpreedSheet/CSV or even ITGlue) of client external IPs, and a way to Link to their ITGlue ID.
-    Azure KeyVault (Used to store ITGlue and Ticketing Software API keys)
-    Enable the SonicOS API for each SonicWALL using Basic Auth
+
+Azure Automation Account or Server to Run Scripts with Powershell version 3 or above.
+Database (Can be SQL, Power Apps Common Data Service, Excel SpreedSheet/CSV or even ITGlue) of client external IPs, and a way to Link to their ITGlue ID.
+
+Azure KeyVault (Used to store ITGlue and Ticketing Software API keys)
+
+Enable the SonicOS API for each SonicWALL using Basic Auth
 
 ITGlue:
     SonicWALL Admin Passwords Documented and Specific Password Category set for them. (Example, We used the Password Category "SonicWALL Admin")

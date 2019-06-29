@@ -2,10 +2,6 @@
 
 This project involved making Security Services Flexible Assets in ITGlue to allow easy auditing and ticketing of security services being disabled for our clients, without the use of SonicWALLs GMS.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 Hardware:

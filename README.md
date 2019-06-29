@@ -51,10 +51,10 @@ A.  Documenting the following Security Services for Sonicwalls and tagging Flexi
    ![](ScreenShots/SW_SS_Anti_Spy_Example.jpg) 
    
     5.  RealTime Black List
-   ![](ScreenShots/SW_SS_RBL_BN_Example.jpg)
     
     6.  BotNet Filter
-        
+   ![](ScreenShots/SW_SS_RBL_BN_Example.jpg)
+   
     7.  Geo-IP Filter
         a. Names of the Allowed and Blocked Countries.
    ![](ScreenShots/SW_SS_Geo_IP_Example.jpg)

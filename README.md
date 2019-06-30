@@ -1,6 +1,6 @@
 # SonicWALL Firewall Security Services Auditing
 
-This project involves making Security Services Flexible Assets in ITGlue to allow easy auditing and ticketing of security services that are being disabled for our clients, without the use of SonicWALLs GMS. Example, if a client's SonicWall had Gateway AV turned off while troubleshooting an issue, when these scripts run a ticket will be created that Gateway AV is off and needs to be re-enabled. This also is documenting all Address Objects on the SonicWall.
+This project involves making Flexible Assets for SonicWall Security Services in ITGlue to allow easy auditing and ticketing of security services, without the use of SonicWALL's GMS. For example, if a client's SonicWall Gateway AV is turned off while troubleshooting an issue, when these scripts run, a ticket will be created that indicates Gateway AV is off and needs to be re-enabled. We are also documenting all Address Objects on the SonicWall.
 
 ### Prerequisites
 

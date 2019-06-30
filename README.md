@@ -18,7 +18,11 @@ Azure KeyVault (Used to store ITGlue and Ticketing Software API keys)
 Enable the SonicOS API for each SonicWALL using Basic Auth
 
 ITGlue:
-    SonicWALL admin passwords documented and specific password Category set for them. (Example, We used the Password Category "SonicWALL Admin")
+
+SonicWALL admin passwords documented and specific password Category set for them. (Example, We used the Password Category "SonicWALL Admin")
+
+SonicWALL Security Services and SonicWALL Address Object flexible asset types (See JSON files)
+
 ![](ScreenShots/SW_Password_Category.jpg)
 ### Script Logic
 Below are high level diagrams of the workflow for these scripts.

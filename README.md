@@ -1,28 +1,29 @@
 # SonicWALL Firewall Security Services Auditing
 
-This project involved making Security Services Flexible Assets in ITGlue to allow easy auditing and ticketing of security services being disabled for our clients, without the use of SonicWALLs GMS.
+This project involves making Security Services Flexible Assets in ITGlue to allow easy auditing and ticketing of security services that are being disabled for our clients, without the use of SonicWALLs GMS. Example, if a client's SonicWall had Gateway AV turned off while troubleshooting an issue, when these scripts run a ticket will be created that Gateway AV is off and needs to be re-enabled. This also is documenting all Address Objects on the SonicWall.
 
 ### Prerequisites
 
 Hardware:
-    Next Gen SonicWALLs that support the SonicOS 6.5.3 firmware. (Required for SonicOS API introduced in version 6.5.1, we are NOT using SSH)
+    Next Gen SonicWALLs that support the SonicOS 6.5.3 firmware. (Required for SonicOS API introduced in version 6.5.1. We are NOT using SSH)
 
 Software/Services:
 
 Azure Automation Account or Server to Run Scripts with Powershell version 3 or above.
-Database (Can be SQL, Power Apps Common Data Service, Excel SpreedSheet/CSV or even ITGlue) of client external IPs, and a way to Link to their ITGlue ID.
+
+Database (Can be SQL, Power Apps Common Data Service, Excel SpreedSheet/CSV or even ITGlue) of client external IP address, and their ITGlue ID.
 
 Azure KeyVault (Used to store ITGlue and Ticketing Software API keys)
 
 Enable the SonicOS API for each SonicWALL using Basic Auth
 
 ITGlue:
-    SonicWALL Admin Passwords Documented and Specific Password Category set for them. (Example, We used the Password Category "SonicWALL Admin")
+    SonicWALL admin passwords documented and specific password Category set for them. (Example, We used the Password Category "SonicWALL Admin")
 ![](ScreenShots/SW_Password_Category.jpg)
 ### Script Logic
 Below are high level diagrams of the workflow for these scripts.
 
-Data Collection Process and updating to ITGlue
+Data Collection Process and Updating to ITGlue
 ![](ScreenShots/Sonicwall_Data_Collection_Process.png)
 
 Auditing and Ticket Generation Process
@@ -30,8 +31,8 @@ Auditing and Ticket Generation Process
 
 ### Security Considerations
 
-In an effort to ensure Security is kept for our company and clients, I've choosen to use Auzre for handling the Powershell Scripts.
-Using an Azure Automation account and Azure Key Vault, we are able to pull API Keys and Sonicwall Passwords without the fear of this sensitive info being passed or stored insecurely. This could be modified to run less securely on a local machine fairly easily. I would recommend running in Azure Automation and using Azure Key Vault for API key storage. Approved IPs are only allowed to connect to our sonicwalls, so the use of a Azure Hybrid worker is required to make that secure connection.
+In an effort to ensure Security is kept for our company and clients, I've chosen to use Auzre for handling the Powershell Scripts.
+Using an Azure Automation account and Azure Key Vault, we are able to pull API Keys and Sonicwall Passwords without the fear of this sensitive information being passed or stored insecurely. This could be modified to run less securely on a local machine fairly easily. I would recommend running in Azure Automation and using Azure Key Vault for API key storage. Approved IPs are only allowed to connect to our SonicWalls, so the use of an Azure Hybrid worker is required to make that secure connection.
 
 ### Integration Features
 A.  Documenting the following Security Services for Sonicwalls and tagging Flexible Asset to Sonicwall Config
@@ -59,7 +60,7 @@ A.  Documenting the following Security Services for Sonicwalls and tagging Flexi
         a. Names of the Allowed and Blocked Countries.
    ![](ScreenShots/SW_SS_Geo_IP_Example.jpg)
     
-B.  Documenting Basic Sonicwall Info
+B.  Documenting Basic Sonicwall Information
 ![](ScreenShots/SW_SS_Info_Example.jpg)
 
 C.  Documenting All Address Objects for Sonicwall, creating their own Flexible Asset and tagging them to SonicWall config.
@@ -73,7 +74,7 @@ C.  Documenting All Address Objects for Sonicwall, creating their own Flexible A
    
    ![](ScreenShots/SW_AO_Subnet_Example.jpg)
 
-D.  Using ConnectWise Manage API to Create Ticketfor out of SOP settings.
+D.  Using ConnectWise Manage API to Create Ticket for out of SOP settings.
 ![](ScreenShots/CMW_Ticket_Example.jpg)
 
 ## Author
